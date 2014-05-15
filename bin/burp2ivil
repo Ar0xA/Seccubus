@@ -127,7 +127,6 @@ foreach my $issue ( @{$burp->{issue}}) {
         #find the port
         my $port;
 	#if : occurs more than once..
- 	my @amount = $hostname =~ /:/g;
         my $count = () = $hostname =~ /:/g;
         if ( $count > 1)  {
 		#port defined at the end of the hostname, we use that
