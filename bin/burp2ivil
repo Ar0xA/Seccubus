@@ -71,7 +71,6 @@ if ( ! $infile || ! -e $infile ) {
 
 print "Reading in .burp file\n" if $verbose;
 my $burp = XMLin($infile,
-		   forceArray	=> [ 'ReportHost', 'ReportItem', 'see_also', 'xref', 'cve', 'bid' ],
 		   KeyAttr	=> undef,
 	          );
 
